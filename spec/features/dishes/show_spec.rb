@@ -20,5 +20,9 @@ describe "As a visitor" do
       expect(page).to have_content("#{@ingredient_2.name}")
       expect(page).to have_content("#{@ingredient_3.name}")
     end
+    
+    it "I see the total calorie count for that dish" do
+      expect(page).to have_content("Total Calories: 1400")
+    end
   end
 end
